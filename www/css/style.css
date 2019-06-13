@@ -1,0 +1,111 @@
+body{
+  background:#117358;
+}
+
+main {
+  margin: 40px auto;
+  text-align: center;
+  background:#ffffff;
+  width:400px;
+  padding:20px 0;
+  font-family: "Roboto", "Arial", "sans serif";
+  
+}
+h1{
+  color:#11B771;
+  margin-bottom:-5px;
+}
+p{
+  font-size:14px;
+  color:#4E4E4E;
+}
+hr{ 
+  margin:30px 0;
+  background:#ffffff;
+  color: #fdfdfd;
+}
+.img-perfil{
+  width:150px;
+   height:150px;
+   margin: auto;
+  border: 5px solid transparent;
+  border-radius: 100%;
+ 
+}
+.img-perfil:hover{
+  border: 5px solid #11B771;
+  border-radius: 100%;
+  width:150px;
+   height:150px;
+   margin: auto;
+  transition: 0.5s
+   
+}
+
+.caja-gris{
+  background:#ececec;
+  width:400px;
+  margin:30px 0;
+  padding:20px 0;
+  /*font-size:0;*/
+  white-space: nowrap;
+}
+.sobre{
+  display: inline-block;
+  text-align:center;
+  border-right: 2px solid #ccc;
+  border-color:#3b3a3a;
+  /*width: 32%;*/
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  }
+
+.sobre:last-child{
+  border-right:transparent;
+}
+.sobre p{
+  margin-top:0;
+}
+/*.sobre:after{ 
+  border-right: 2px solid #ccc;
+  border-color:#3b3a3a;
+  padding: 0px 5px 0 0;
+  
+}*/
+.redes{
+   background-image:url(https://p.w3layouts.com/demos/june-2016/01-06-2016/model_profile_widget/web/images/social.png);
+  margin:auto;
+  display: inline-block;
+  height:25px;
+  width:23px;
+  margin: 0 15px;
+  transition:all 0.5s;
+  }
+
+.redes.face{background-position:0 0;}
+.redes.face:hover{ background-position:0 -30px;}
+
+.redes.twitter{ background-position:-24px 0px ;}
+.redes.twitter:hover{ background-position: -24px -30px;}
+
+.redes.instagram{ background-position:-54px 0px ;}
+.redes.instagram:hover{ background-position: -54px -30px;}
+
+.redes.youtube{ background-position:-84px 0px ;}
+.redes.youtube:hover{ background-position: -84px -30px;}
+
+.boton a{
+   list-style: none;
+  text-decoration: none;
+   color: #fff;
+  background:#11B771;
+  padding: 8px 40px;
+  border-radius:5px;
+  margin:20px 0;  
+}
+
+.boton{
+  margin:30px 0 20px;
+}
+
+.boton a:hover{background:#3B3A3A;}
