@@ -1,19 +1,20 @@
 body{
-  background:#117358;
+  background:#fff;
 }
 
 main {
-  margin: 40px auto;
+  margin: auto auto;
   text-align: center;
-  background:#ffffff;
-  width:400px;
-  padding:20px 0;
+  background-image: url(../img/po.jpg);
+  width:auto;
+  padding:auto 0;
   font-family: "Roboto", "Arial", "sans serif";
-  
+  margin-left: auto
+
 }
-h1{
-  color:#11B771;
-  margin-bottom:-5px;
+h3{
+  color:#fff;
+  margin-bottom:10px;
 }
 p{
   font-size:14px;
@@ -25,26 +26,16 @@ hr{
   color: #fdfdfd;
 }
 .img-perfil{
-  width:150px;
-   height:150px;
+  width: 300px;
+   height:200px;
    margin: auto;
   border: 5px solid transparent;
   border-radius: 100%;
- 
-}
-.img-perfil:hover{
-  border: 5px solid #11B771;
-  border-radius: 100%;
-  width:150px;
-   height:150px;
-   margin: auto;
-  transition: 0.5s
-   
 }
 
 .caja-gris{
   background:#ececec;
-  width:400px;
+  width:auto;
   margin:30px 0;
   padding:20px 0;
   /*font-size:0;*/
@@ -58,6 +49,7 @@ hr{
   /*width: 32%;*/
   width: calc(100% / 3);
   box-sizing: border-box;
+
   }
 
 .sobre:last-child{
@@ -109,3 +101,7 @@ hr{
 }
 
 .boton a:hover{background:#3B3A3A;}
+
+.fondo: {
+	background-image: url("../img/poke.jpg")
+}
