@@ -5,6 +5,9 @@ progress::-moz-progress-bar{
     background: #FF8000;
     border-radius : 20px;
 }
+.margen{
+  font-size: 15px
+}
 
 main {
   margin: auto auto;
@@ -37,7 +40,15 @@ hr{
   border-radius: 100%;
 }
 .p1{
-  background: #ffff
+  background: #ffff;
+  opacity:0.8;
+  border-radius: 75px
+
+}
+.b15{
+  background: #FFFFFF;
+  opacity:0.8;
+  
 }
 
 .caja-gris{
@@ -47,6 +58,8 @@ hr{
   padding:20px 0;
   /*font-size:0;*/
   white-space: nowrap;
+  opacity:1;
+
 }
 .sobre{
   display: inline-block;
@@ -130,7 +143,7 @@ body {
 }
 
 .todo {
-  max-width: 900px;
+  max-width: 550px;
   width: 100%;
   margin: 0 auto;
   margin-top: 10px;
@@ -165,12 +178,13 @@ img {
 }
  
 .carta {
-  width: 14%;
+  width: 15%;
   margin: 1% 1%;
-  height: 150px;
-  border-radius: 8px;
+  height: 100px;
+  border-radius: 20px;
   float: left;
   cursor: pointer;
+
   
   
 }
@@ -196,6 +210,7 @@ img {
   -moz-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
   transition: background 0.5s;
+  background-image: url(https://www.pokexperto.net/cartadex/reverso.png);
 }
 
 .flipped {
@@ -212,6 +227,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+
 }
 
 .atras {
@@ -221,7 +237,7 @@ img {
   -o-transform: rotateY(180deg);
   text-align: center;
   box-shadow: 0 6px 16px rgba(0,0,0,0.30);
-  
+
 }
 
 .contador p {
