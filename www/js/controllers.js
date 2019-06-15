@@ -1,38 +1,163 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) { })
-
-.controller('ChatsCtrl', function($scope, Chats) {
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  };
-
-var url = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
-
-const path = 'https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon/1';
-
-
-let bulbsaur;
-
-
-
-$.getJSON(path, function (data){
-
-  bulbsaur = data;
-  
-  console.log(bulbsaur.name); 
-  console.log(bulbsaur.stats);  
+.controller('DashCtrl', function($scope) { $(document).ready(function() {
+  fillProgressBar('cFija', '#f66', 80, 'Exp. 80%');
   
 });
+
+function newProgressBar(id) {
+  var newCanvas =
+    $('<canvas/>', {
+      'id': id
+    });
+  newCanvas.attr("width", 100);
+  newCanvas.attr("height", 100);
+  $('.container').append(newCanvas);
+}
+
+function fillProgressBar(id, color, progress, text) {
+  var p = 0;
+  var interval = setInterval(function() {
+
+    var canvas = document.getElementById(id);
+    var context = canvas.getContext('2d');
+    var x = canvas.width / 2;
+    var y = canvas.height / 2;
+    var radius = 50;
+    var startAngle = 0;
+    var endAngle = 2 * Math.PI;
+    var counterClockwise = false;
+    if (progress == null)
+      progress = 100;
+
+    context.clearRect(0, 0, 2, 2);
+
+    context.beginPath();
+    context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+    context.fillStyle = '#eee';
+    context.fill();
+
+    radius = 60;
+    startAngle = 1.5 * Math.PI;
+    //endAngle = 1.5 * Math.PI + (2 * Math.PI) * progress / 100;
+    endAngle = 1.5 * Math.PI + (2 * Math.PI) * p / 100;
+
+    context.beginPath();
+    context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
+    context.lineWidth = 20;
+    context.strokeStyle = color;
+    context.stroke();
+
+    if (text == null)
+      text = "HOLA";
+
+    context.fillStyle = '#101010';
+    context.font = "20px Arial";
+    var xText = 100 - (context.measureText(text).width / 2);
+    context.fillText(text, xText, 110);
+    if (p == progress)
+      clearInterval(interval);
+    p++;
+  }, 1);
+}
+})
+
+.controller('ChatsCtrl', function($scope, Chats) {
+let buttonSearch;
+let inputPokemon;
+let namePokemon;
+let idPokemon;
+let picturePokemon;
+const spinner = document.querySelector('.spinner');
+
+function reload() {
+    document.getElementById('search-Pokemon').addEventListener('click', searchPokemon);
+    inputPokemon = document.querySelector('.input-pokemon').value.toLowerCase();
+    namePokemon = document.querySelector('.name-pokemon');
+    idPokemon = document.querySelector('.id-pokemon');
+    picturePokemon = document.querySelector('.img-pokemon');
+    weightPokemon = document.getElementById('weight');
+    heightPokemon = document.getElementById('height');
+}
+
+function spinnerLoading(param) {
+    if (param === 'hide') {
+        idPokemon.style.display = 'none';
+        picturePokemon.style.display = 'none'
+        namePokemon.style.display = 'none';
+        spinner.style.display = 'block';
+
+    }else{
+        idPokemon.style.display = 'block';
+        picturePokemon.style.display = 'block'
+        namePokemon.style.display = 'block';
+        spinner.style.display = 'none';
+    }
+}
+
+function searchPokemon(e) {
+    e.preventDefault();
+    reload();
+    spinnerLoading('hide');
+    fetch(`https://pokeapi.co/api/v2/pokemon/${inputPokemon}`)
+        .then((response) => {
+            if (response.status === 200) {
+                return response.json();
+            }
+            throw response;
+        })
+        .then((pokemon) => {
+            spinnerLoading('show');
+            let name = pokemon.name;
+            let id = pokemon.id;
+            let picture = pokemon.sprites.front_default;
+            let weight = pokemon.weight;
+            let height = pokemon.height;
+
+            document.querySelector('.types-list').innerHTML = '';
+            for (const key in pokemon.types) {
+                if (pokemon.types.hasOwnProperty(key)) {
+                    const types = pokemon.types[key].type.name;
+                    document.querySelector('.types-list').innerHTML += `
+                        <li>${types}</li>
+                    `;
+                }
+            }
+
+            namePokemon.innerHTML = name;
+            idPokemon.innerHTML = `#${id}`;
+
+
+            picturePokemon.setAttribute('src', picture);
+
+            weightPokemon.innerHTML = `WEIGHT: ${weight}`;
+            heightPokemon.innerHTML = `HEIGHT: ${height}`;
+
+        })
+        .catch((error) => {
+            spinnerLoading('show');
+            if (error.status === 404) {
+                let oldId = idPokemon.innerHTML;
+                let oldName = namePokemon.innerHTML;
+                let oldPicture = document.querySelector('.img-pokemon').getAttribute('src');
+
+                idPokemon.innerHTML = 'ERROR';
+                namePokemon.innerHTML = 'DOES NOT EXIST';
+                picturePokemon.setAttribute('src', 'https://raw.githubusercontent.com/SoyDiego/pokedex.js/master/img/emoji.png');
+
+                setInterval(() => {
+                    idPokemon.innerHTML = oldId;
+                    namePokemon.innerHTML = oldName
+                    picturePokemon.setAttribute('src', oldPicture);
+                }, 2000);
+
+                document.querySelector('.input-pokemon').value = '';
+
+            }
+        })
+}
+
+reload();
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {

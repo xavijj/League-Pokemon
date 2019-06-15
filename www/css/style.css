@@ -39,10 +39,19 @@ hr{
   border: 5px solid transparent;
   border-radius: 100%;
 }
+.tamaño{
+  font-size: 20px
+  }
 .p1{
   background: #ffff;
   opacity:0.8;
   border-radius: 75px
+
+}
+h4{
+  background: #454545;
+  border-radius: 75px;
+  opacity:0.8;
 
 }
 .b15{
@@ -139,11 +148,11 @@ hr{
 }
 
 body {
-  background: #FF9090;
+  background: #FFFF;
 }
 
 .todo {
-  max-width: 550px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
   margin-top: 10px;
@@ -178,13 +187,12 @@ img {
 }
  
 .carta {
-  width: 15%;
+  width: 14%;
   margin: 1% 1%;
-  height: 100px;
-  border-radius: 20px;
+  height: 150px;
+  border-radius: 8px;
   float: left;
   cursor: pointer;
-
   
   
 }
@@ -210,7 +218,6 @@ img {
   -moz-transform: rotateY(0deg);
   -o-transform: rotateY(0deg);
   transition: background 0.5s;
-  background-image: url(https://www.pokexperto.net/cartadex/reverso.png);
 }
 
 .flipped {
@@ -227,7 +234,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-
 }
 
 .atras {
@@ -237,7 +243,7 @@ img {
   -o-transform: rotateY(180deg);
   text-align: center;
   box-shadow: 0 6px 16px rgba(0,0,0,0.30);
-
+  
 }
 
 .contador p {
@@ -266,53 +272,161 @@ p.counter {
   background: #E8A868;
   cursor: pointer;
 }
-
-body{
-background: url('https://vignette.wikia.nocookie.net/youtubepoop/images/4/4c/Pokeball.png/revision/latest?cb=20150418234807');
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+.container {
+  padding: 1px 10px;
+  text-align: center;
+}:root {
+  --red: #dd0b2d;
+  --border: #88061c;
+  --dark: #131b23;
+  --white: #fff;
+  --grey: #e6e6e6;
+  --lightblue: #add8e6;
+  --green: #51ae5f;
 }
 
-#headerttile{
-  color:red;
-}
-#headerspan{
-  color: white;
-}
-
-.navbar{
-  background-color: black;
-  
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
-span{
-  font-size: 15px;  
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: var(--dark);
+  font-family: "Roboto", sans-serif;
+}
+.container-left,
+.container-right {
+  width: 100vw;
+  height: 90vh;
+  background: var(--red);
+  border: 8px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#leftBar{
-  max-width: 200px;
-  height: auto;
-    /*border: 2px solid black;*/  
-  position: absolute:
+.main-title {
+  color: var(--white);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 10px;
+  margin-bottom: 0;
 }
-#leftList{
-  margin-left: -35px;
-  
+
+.line {
+  width: 50px;
+  border: 3px solid var(--dark);
+  margin-bottom: 20px;
 }
-#center{
+
+.display-pokemon {
   width: 80%;
-  height: auto;
-  /*border: 2px solid black;*/  
+  height: 50%;
+  background: var(--lightblue);
+  border: 10px solid var(--dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-img{
-  padding: 1em;
-  display: inline;
+.spinner{
+  display: none;
 }
 
+.name-pokemon {
+  margin-bottom: none;
+  padding: none;
+  font-weight: 800;
+  font-size: 15px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: var(--dark);
+}
 
-.container{
-  display: block;
+.img-pokemon {
+  box-sizing: border-box;
+  margin: none;
+  padding: none;
+}
+
+.info-title {
+  letter-spacing: 5px;
+  color: var(--grey);
+  margin-bottom: 5px;
+}
+
+.input-pokemon {
+  border: none;
+  width: 75%;
+  padding: 10px;
+  background: var(--grey);
+  border: 3px solid var(--dark);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--dark);
+  font-size: 15px;
+}
+
+.button-search {
+  margin-top: 20px;
+  border: none;
+  padding: 1px 10px 1px 10px;
+  border: 3px solid var(--dark);
+  background: var(--green);
+  color: var(--white);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.fa-searchengin {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+.info-types{
+    width: 80%;
+    background: var(--grey);
+    border: 5px solid var(--dark);
+    padding: 5px;
+}
+
+.title-types{
+    margin: 0px;
+}
+
+.titles{
+  text-align: center;
+}
+
+.info-size{
+    margin: 10px;
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.info-weight,
+.info-height{
+    width: 50%;
+    background: var(--grey);
+    margin: 10px;
+    border: 5px solid var(--dark);
+    text-align: center;
+}
+
+.container-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-images img{
+    width: 30%;
 }

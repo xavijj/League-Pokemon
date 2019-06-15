@@ -1,420 +1,53 @@
 <ion-view view-title="Pokedex">
   <ion-content>
-    
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+<div class="container-left">
+        <h1 class="main-title">Pokedex</h1>
+        <hr class="line">
 
-    <!-- Bootstrap -->
-   <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <div class="display-pokemon">
+                      <div class="spinner">
+                <img src="https://raw.githubusercontent.com/SoyDiego/pokedex.js/master/img/loading.gif" alt="">
+            </div>
+                <h2 class="id-pokemon">#1</h2>
+            <img class="img-pokemon"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+            <h2 class="name-pokemon">BULBASAUR</h2>
+        </div>
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  </head>
-  
-  <body>
-    
-    
-    
-<div class="container-fluid">
-  <nav class="navbar navbar-light bg-light">
-      <h1 id='headerttile' class='text-align-left'> Pokepedia <span id='headerspan'> Gotta Catch em' All </span></h1>
-</nav>
-    
-
-
-<div id='leftBar' class='col-md-4'>
-  <h3> Indigo League </h3>
-  <div id='leftList'>
-  <ul id='pokedex'>
-    Pokedex
-  </ul>
-    <ul>
-    Trainers Guide
-  </ul>
-    <ul>
-    Gym Leaders
-  </ul>
-  </div>
+        <h3 class="info-title">Insert ID or NAME</h3>
+        <input type="text" class="input-pokemon">
+        <button id="search-Pokemon" class="button-search"><i class="fab fa-searchengin"><h3>Buscar</h3></i></button>
     </div>
-    
-  
-  <div id='center' class='col-md-12'>
-    
-<div class='container'>
-    <img id='1' src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
-  
-      
-  
-    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png">
-  
-  
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"</img>
-        <p>pikachu</p>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"</img>
-  
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png"</img>
-    
-        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png"</img>
-  
+
+    <div class="container-right">
+        <h1 class="main-title">INFO</h1>
+        <hr class="line">
+
+        <div class="info-types">
+            <h3 class="titles">TYPES:</h3>
+            <hr>
+            <ul class="types-list">
+                <li>Poison</li>
+                <li>Grass</li>
+            </ul>
+        </div>
+
+        <div class="info-size">
+            <div class="info-weight">
+                <h3 id="weight" class="titles">Weight: 69</h3>
+                <hr>
+            </div>
+            <div class="info-height">
+                <h3 id="height" class="titles">Height: 7</h3>
+                <hr>
+            </div>
+        </div>
+
+        
+        <div class="container-images">
+            <img src="https://raw.githubusercontent.com/SoyDiego/pokedex.js/master/img/logo.png" alt="">
+            <img src="https://raw.githubusercontent.com/SoyDiego/pokedex.js/master/img/pokeball.png" alt="">
+        </div>
     </div>
-    
-  </div>
-  
-  
-  
-  
-  </div>
-
-    
-    
-    
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
   </ion-content>
 </ion-view>
