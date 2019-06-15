@@ -266,3 +266,53 @@ p.counter {
   background: #E8A868;
   cursor: pointer;
 }
+
+body{
+background: url('https://vignette.wikia.nocookie.net/youtubepoop/images/4/4c/Pokeball.png/revision/latest?cb=20150418234807');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#headerttile{
+  color:red;
+}
+#headerspan{
+  color: white;
+}
+
+.navbar{
+  background-color: black;
+  
+}
+
+span{
+  font-size: 15px;  
+}
+
+#leftBar{
+  max-width: 200px;
+  height: auto;
+    /*border: 2px solid black;*/  
+  position: absolute:
+}
+#leftList{
+  margin-left: -35px;
+  
+}
+#center{
+  width: 80%;
+  height: auto;
+  /*border: 2px solid black;*/  
+}
+
+img{
+  padding: 1em;
+  display: inline;
+}
+
+
+.container{
+  display: block;
+}

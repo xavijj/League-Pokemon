@@ -15,6 +15,24 @@ angular.module('starter.controllers', [])
   $scope.remove = function(chat) {
     Chats.remove(chat);
   };
+
+var url = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/";
+
+const path = 'https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon/1';
+
+
+let bulbsaur;
+
+
+
+$.getJSON(path, function (data){
+
+  bulbsaur = data;
+  
+  console.log(bulbsaur.name); 
+  console.log(bulbsaur.stats);  
+  
+});
 })
 
 .controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
