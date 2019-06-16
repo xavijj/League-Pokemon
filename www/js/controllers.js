@@ -178,24 +178,24 @@ var fields = document.querySelectorAll(".atras");
 
 
 var images = [
-"https://s-media-cache-ak0.pinimg.com/originals/30/9b/58/309b58c5153182dc480d429d21bb1ec1.png",
-"https://s-media-cache-ak0.pinimg.com/originals/4b/ae/6c/4bae6cba8ec4060b5c4059ad2ce9c329.png",
-"https://s-media-cache-ak0.pinimg.com/originals/b6/df/d7/b6dfd79c625f9ebe14709a9b75224962.png",
-"https://s-media-cache-ak0.pinimg.com/originals/76/e7/a3/76e7a392abff7c8a22969f7c95f37d4c.png",
-"https://s-media-cache-ak0.pinimg.com/originals/cb/ca/50/cbca50fc5156fb15b68bd3ab5dae6e06.png",
-"https://s-media-cache-ak0.pinimg.com/originals/de/b9/70/deb9709e87f1d5b7f6457e8286113012.png",
-"https://s-media-cache-ak0.pinimg.com/originals/29/9e/c7/299ec7c3cd62b88dd4905ffc6a71d8f9.png",
-"https://s-media-cache-ak0.pinimg.com/originals/74/11/00/74110094c67aa9a519c70ecb7cec7d76.png",
-"http://diysolarpanelsv.com/images/neville-clipart-4.png",
-"https://s-media-cache-ak0.pinimg.com/originals/30/9b/58/309b58c5153182dc480d429d21bb1ec1.png",
-"https://s-media-cache-ak0.pinimg.com/originals/4b/ae/6c/4bae6cba8ec4060b5c4059ad2ce9c329.png",
-"https://s-media-cache-ak0.pinimg.com/originals/b6/df/d7/b6dfd79c625f9ebe14709a9b75224962.png",
-"https://s-media-cache-ak0.pinimg.com/originals/76/e7/a3/76e7a392abff7c8a22969f7c95f37d4c.png",
-"https://s-media-cache-ak0.pinimg.com/originals/cb/ca/50/cbca50fc5156fb15b68bd3ab5dae6e06.png",
-"https://s-media-cache-ak0.pinimg.com/originals/de/b9/70/deb9709e87f1d5b7f6457e8286113012.png",
-"https://s-media-cache-ak0.pinimg.com/originals/29/9e/c7/299ec7c3cd62b88dd4905ffc6a71d8f9.png",
-"https://s-media-cache-ak0.pinimg.com/originals/74/11/00/74110094c67aa9a519c70ecb7cec7d76.png",
-"http://diysolarpanelsv.com/images/neville-clipart-4.png"
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/SM10/SM10_ES_57.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/XYP/XYP_ES_XY84.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/XYP/XYP_ES_XY17.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/BW4/BW4_ES_8.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/SM10/SM10_ES_131.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/BWP/BWP_ES_BW74.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/SM35/SM35_ES_56.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/SMP/SMP_ES_SM34.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/XYP/XYP_ES_XY116.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/SM10/SM10_ES_57.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/XYP/XYP_ES_XY84.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/XYP/XYP_ES_XY17.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/BW4/BW4_ES_8.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/SM10/SM10_ES_131.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/BWP/BWP_ES_BW74.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/SM35/SM35_ES_56.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/SMP/SMP_ES_SM34.png",
+"https://assets.pokemon.com/assets/cms2-es-es/img/cards/web/XYP/XYP_ES_XY116.png"
 ];
 // verificacion de los clicks
 function clicked() { 
